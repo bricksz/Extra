@@ -5,6 +5,7 @@ from collections import defaultdict
 data = defaultdict(dict)
 metrics = []
 
+# glob.glob('File directory containing .csv') 
 for csv_filename in glob.glob('C:/Users/thuang/FY17a/*.csv'):
     with open(csv_filename, 'r', newline='') as f_input:
         csv_input = csv.reader(f_input)
